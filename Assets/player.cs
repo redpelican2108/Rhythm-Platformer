@@ -12,10 +12,12 @@ public class player : MonoBehaviour
     public float jumpSpeed;
     public float timer;
     public Vector3 startingPosition;
+    public float counter;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        
 
     }
 
@@ -37,13 +39,13 @@ public class player : MonoBehaviour
         }
         
 
-        if (timer > 0)
+        if (counter > 0)
         {
-            timer -= Time.deltaTime;
+            counter -= Time.deltaTime;
         }
         else
         {
-            timer = 2;
+            counter = timer;
             velocity.y = jumpSpeed;
         }
         rb.velocity = velocity;
@@ -59,6 +61,18 @@ public class player : MonoBehaviour
         if(collider.gameObject.tag == "Checkpoint")
         {
             startingPosition = collider.transform.position;
+        }
+        if(collider.gameObject.tag == "MovingPlatform")
+        {
+            transform.parent = collider.gameObject.transform;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collider)
+    {
+        if(collider.gameObject.tag == "MovingPlatform")
+        {
+            transform.parent = null;
         }
     }
 }
