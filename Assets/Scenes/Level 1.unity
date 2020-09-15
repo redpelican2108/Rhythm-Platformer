@@ -1613,7 +1613,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228708553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 28.42, y: 1.55, z: 0}
+=======
+  m_LocalPosition: {x: 30.4, y: 0.9, z: 0}
+>>>>>>> 1a357f7f19bd1210321455677cbc981ca9a48592
   m_LocalScale: {x: 10, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2272,7 +2276,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1527712047}
   - component: {fileID: 1527712046}
+<<<<<<< HEAD
   - component: {fileID: 1527712048}
+=======
+>>>>>>> 1a357f7f19bd1210321455677cbc981ca9a48592
   m_Layer: 0
   m_Name: Rhythm Cannon
   m_TagString: Untagged
@@ -2318,7 +2325,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
+<<<<<<< HEAD
   m_SortingOrder: 2
+=======
+  m_SortingOrder: 0
+>>>>>>> 1a357f7f19bd1210321455677cbc981ca9a48592
   m_Sprite: {fileID: 21300000, guid: fec0a3b52cfeb624da95ba85d88bcefe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2340,6 +2351,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 36.185, y: 0.5, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
+<<<<<<< HEAD
   m_Children:
   - {fileID: 1790477307}
   m_Father: {fileID: 0}
@@ -2360,6 +2372,12 @@ MonoBehaviour:
   bullet: {fileID: 2563609644784129938, guid: 652fbe43ffea7814a9a99492eb99c3e3, type: 3}
   timer: 1
   targetPosition: {fileID: 1790477307}
+=======
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> 1a357f7f19bd1210321455677cbc981ca9a48592
 --- !u!1 &1562893475
 GameObject:
   m_ObjectHideFlags: 0
@@ -2458,6 +2476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offset: {x: 2, y: 0.5, z: -10}
   player: {fileID: 1874378156}
+<<<<<<< HEAD
 --- !u!1 &1790477306
 GameObject:
   m_ObjectHideFlags: 0
@@ -2488,6 +2507,8 @@ Transform:
   m_Father: {fileID: 1527712047}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> 1a357f7f19bd1210321455677cbc981ca9a48592
 --- !u!1 &1874378152
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,7 +2542,11 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+<<<<<<< HEAD
   m_Offset: {x: 0.01930163, y: -0.009652846}
+=======
+  m_Offset: {x: 0, y: 0}
+>>>>>>> 1a357f7f19bd1210321455677cbc981ca9a48592
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2532,7 +2557,11 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 0.16129793, y: 0.15911804}
+=======
+  m_Size: {x: 0.32, y: 0.32}
+>>>>>>> 1a357f7f19bd1210321455677cbc981ca9a48592
   m_EdgeRadius: 0
 --- !u!50 &1874378154
 Rigidbody2D:
@@ -2594,7 +2623,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: c27c38ec6107b58459ec22fbec9b9cf5, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: 76416fc24a213db4c902a5e3f6ba6b4a, type: 3}
+>>>>>>> 1a357f7f19bd1210321455677cbc981ca9a48592
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2613,8 +2646,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874378152}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -6.695, y: -2.844, z: 0}
   m_LocalScale: {x: 1.4840958, y: 1.4929874, z: 1}
+=======
+  m_LocalPosition: {x: -6.3214555, y: -2.39, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+>>>>>>> 1a357f7f19bd1210321455677cbc981ca9a48592
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2

@@ -55,7 +55,7 @@ public class player : MonoBehaviour
     {
         if(collider.gameObject.tag == "Boundary")
         {
-            
+            print("collided with boundary");
             transform.position = startingPosition;
         }
         if(collider.gameObject.tag == "Checkpoint")
@@ -65,13 +65,6 @@ public class player : MonoBehaviour
         if(collider.gameObject.tag == "MovingPlatform")
         {
             transform.parent = collider.gameObject.transform;
-        }
-        if(collider.gameObject.tag == "Bullet")
-        {
-            print("collided with bullet");
-            transform.position = startingPosition;
-            Destroy(collider.gameObject);
-
         }
     }
 
