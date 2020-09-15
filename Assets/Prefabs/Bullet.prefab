@@ -98,7 +98,7 @@ MonoBehaviour:
   bulletSpeed: 2
   target: {fileID: 0}
   cannon: {fileID: 0}
-  distance: 10
+  distance: 100
 --- !u!58 &2563609644784129948
 CircleCollider2D:
   m_ObjectHideFlags: 0

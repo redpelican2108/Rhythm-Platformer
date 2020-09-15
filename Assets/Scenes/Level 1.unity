@@ -2386,7 +2386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee4ad98a8d8897488b7b551091edc93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
+  bullet: {fileID: 2563609644784129938, guid: 652fbe43ffea7814a9a99492eb99c3e3, type: 3}
   timer: 1
   targetPosition: {fileID: 1328170828}
 --- !u!1 &1562893475
