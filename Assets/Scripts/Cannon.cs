@@ -10,6 +10,7 @@ public class Cannon : MonoBehaviour
     public float TimeBtnShots;
     private float MaxTimeBtnShots;
     public GameObject Projectile;
+    public Transform BulletTarget;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,12 +22,15 @@ public class Cannon : MonoBehaviour
     {
         if(MaxTimeBtnShots <= 0)
         {
-            Instantiate(Projectile, transform.position, Quaternion.identity);
+            GameObject thing = Instantiate(Projectile,transform.position,Quaternion.identity) as GameObject;
+            Bullet script = thing.GetComponent<Bullet>();
+            script.target = BulletTarget;
+            script.cannon = gameObject.transform;
             MaxTimeBtnShots = TimeBtnShots;
         }
         else
         {
-            MaxTimeBtnShots -= Time.deltatime; 
+            MaxTimeBtnShots -= Time.deltaTime; 
         }
     }
 }
