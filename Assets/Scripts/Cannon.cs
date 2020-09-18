@@ -7,29 +7,26 @@ using UnityEngine;
 
 public class Cannon : MonoBehaviour
 {
-    float counter;
-    public GameObject bullet;
-    public float timer;
-    public Transform targetPosition;
+    public float TimeBtnShots;
+    private float MaxTimeBtnShots;
+    public GameObject Projectile;
     // Start is called before the first frame update
     void Start()
     {
-        counter = timer;
+        MaxTimeBtnShots = TimeBtnShots;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(counter > 0)
+        if(MaxTimeBtnShots <= 0)
         {
-            counter -= Time.deltaTime;
+            Instantiate(Projectile, transform.position, Quaternion.identity);
+            MaxTimeBtnShots = TimeBtnShots;
         }
         else
         {
-            GameObject projectile = Instantiate(bullet, transform.position, Quaternion.identity) as GameObject;
-            projectile.GetComponent<Bullet>().target = targetPosition;
-            projectile.GetComponent<Bullet>().cannon = gameObject.transform;
-            counter = timer;
+            MaxTimeBtnShots -= Time.deltatime; 
         }
     }
 }
