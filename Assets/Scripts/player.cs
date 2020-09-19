@@ -66,6 +66,12 @@ public class player : MonoBehaviour
         {
             transform.parent = collider.gameObject.transform;
         }
+        if (collider.gameObject.tag == "Bullet")
+        {
+            transform.position = startingPosition;
+            Destroy(collider.gameObject);
+        }
+
     }
 
     void OnTriggerExit2D(Collider2D collider)
