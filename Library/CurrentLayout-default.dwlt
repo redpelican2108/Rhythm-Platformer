@@ -48,7 +48,11 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 100
+=======
+  controlID: 63
+>>>>>>> 67232e48fa4243d8280816d51fedf743b1a44bb1
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +223,11 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 37
+=======
+  controlID: 64
+>>>>>>> 67232e48fa4243d8280816d51fedf743b1a44bb1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +252,11 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 38
+=======
+  controlID: 65
+>>>>>>> 67232e48fa4243d8280816d51fedf743b1a44bb1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -311,20 +323,34 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Scenes
+=======
+    - Assets/Scripts
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scripts
+>>>>>>> 67232e48fa4243d8280816d51fedf743b1a44bb1
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\knots\OneDrive\Documents\GitHub\Rhythm\master
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: b03a0000
     m_LastClickedID: 15024
     m_ExpandedIDs: 00000000983a00009a3a00009c3a00009e3a0000a03a0000a23a000000ca9a3b
+=======
+    m_SelectedIDs: a63a0000
+    m_LastClickedID: 15014
+    m_ExpandedIDs: 000000008c3a00008e3a0000903a0000923a0000943a00009c3a000000ca9a3b
+>>>>>>> 67232e48fa4243d8280816d51fedf743b1a44bb1
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -352,7 +378,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000983a00009a3a00009c3a00009e3a0000a03a0000a23a0000
+=======
+    m_ExpandedIDs: 000000008c3a00008e3a0000903a0000923a0000943a0000
+>>>>>>> 67232e48fa4243d8280816d51fedf743b1a44bb1
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -475,9 +505,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 00420000
       m_LastClickedID: 0
       m_ExpandedIDs: a4ecffffeaecffff28eeffff6aeeffff7eeeffff3ef5ffffe2faffff5efbffffa63f0000ac3f0000
+=======
+      m_SelectedIDs: 303d0000
+      m_LastClickedID: 15664
+      m_ExpandedIDs: 4ef9ffffc2faffff5efbffff
+>>>>>>> 67232e48fa4243d8280816d51fedf743b1a44bb1
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -537,9 +573,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 28.766342, y: 3.4345741, z: -980.061}
     speed: 2
     m_Value: {x: 29.617025, y: 3.9717975, z: -979.97614}
+=======
+    m_Target: {x: 24.74042, y: -4.8190823, z: -941.81055}
+    speed: 2
+    m_Value: {x: 24.74042, y: -4.8190823, z: -941.81055}
+>>>>>>> 67232e48fa4243d8280816d51fedf743b1a44bb1
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -589,9 +631,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 22.487345
     speed: 2
     m_Value: 23.546957
+=======
+    m_Target: 15.029499
+    speed: 2
+    m_Value: 15.029499
+>>>>>>> 67232e48fa4243d8280816d51fedf743b1a44bb1
   m_Ortho:
     m_Target: 1
     speed: 2
