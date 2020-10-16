@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 802142892}
   - component: {fileID: 802142891}
   - component: {fileID: 802142890}
+  - component: {fileID: 802142893}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -312,6 +313,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &802142893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802142889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca637e273c6ed804fbeca85bc383231b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: {x: 2, y: 0.5, z: -10}
+  player: {fileID: 2078597884}
 --- !u!1 &853303295
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +338,7 @@ GameObject:
   - component: {fileID: 853303296}
   - component: {fileID: 853303298}
   - component: {fileID: 853303297}
+  - component: {fileID: 853303299}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -696,6 +712,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &853303299
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853303295}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &1292354344
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,8 +840,8 @@ GameObject:
   - component: {fileID: 2078597884}
   - component: {fileID: 2078597883}
   - component: {fileID: 2078597882}
-  - component: {fileID: 2078597881}
   - component: {fileID: 2078597880}
+  - component: {fileID: 2078597885}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -838,23 +870,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2078597881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078597879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2736260d08a62274992ff80bdcfe51cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  jumpSpeed: 5
-  timer: 2
-  startingPosition: {x: 0, y: 0, z: 0}
-  counter: 1.5
 --- !u!61 &2078597882
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -945,3 +960,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2078597885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078597879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225ea06091dfd2244bf7bec437bc4154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  jumpSpeed: 5
+  highJumpSpeed: 10
+  highJumpTime: 3
+  timer: 5
+  jumped: 0
+  startingPosition: {x: 0, y: 0, z: 0}
+  counter: 0

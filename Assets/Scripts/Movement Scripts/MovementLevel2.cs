@@ -10,7 +10,10 @@ public class MovementLevel2 : MonoBehaviour
     Rigidbody2D rb;
     public float speed;
     public float jumpSpeed;
+    public float highJumpSpeed;
+    public float highJumpTime;
     public float timer;
+    public int jumped;
     public Vector3 startingPosition;
     public float counter;
     // Start is called before the first frame update
@@ -49,19 +52,20 @@ public class MovementLevel2 : MonoBehaviour
         }
         transform.localScale = characterScale;
 
-        if (counter > 0)
-        {
-            counter -= Time.deltaTime;
-        }
-        else if (counter == 3)
-        {
-            velocity.y = jumpSpeed;
-        }
-        else 
+        if (counter <= 0)
         {
             counter += timer;
             velocity.y = jumpSpeed;
-            velocity.y = jumpSpeed;
+            jumped = 1;
+        }
+        else if (counter < highJumpTime && jumped == 1)
+        {
+            velocity.y = highJumpSpeed;
+            jumped = 0;
+        }
+        else if (counter > 0)
+        {
+            counter -= Time.deltaTime;
         }
         rb.velocity = velocity;
     }
