@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
@@ -9,12 +10,15 @@ public class MovingPlatform : MonoBehaviour
 {
     public Transform position1, position2;
     public bool movingToLeft;
+    public bool moving;
     public float speed;
     Vector3 nextPosition;
+    SpriteRenderer sprite;
 
     // Start is called before the first frame update
     void Start()
     {
+        sprite = GetComponent<SpriteRenderer>();
         if (movingToLeft)
         {
             nextPosition = position1.position;
@@ -28,16 +32,23 @@ public class MovingPlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position == position1.position)
+        if (moving)
         {
-            nextPosition = position2.position;
-        }
+            sprite.color = new Color(1, 1, 1, 1);
+            if (transform.position == position1.position)
+            {
+                nextPosition = position2.position;
+            }
 
-        if (transform.position == position2.position)
+            if (transform.position == position2.position)
+            {
+                nextPosition = position1.position;
+            }
+            transform.position = Vector3.MoveTowards(transform.position, nextPosition, speed * Time.deltaTime);
+        } 
+        else
         {
-            nextPosition = position1.position;
+            sprite.color = new Color(0, 1, 0, 1);
         }
-        transform.position = Vector3.MoveTowards(transform.position, nextPosition, speed * Time.deltaTime);
-
     }
 }

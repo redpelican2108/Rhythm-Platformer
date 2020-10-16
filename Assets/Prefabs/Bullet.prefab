@@ -64,7 +64,7 @@ MonoBehaviour:
   target: {fileID: 0}
   cannon: {fileID: 0}
   distance: 10
-  bulletSpeed: 2
+  bulletSpeed: 1
 --- !u!212 &-116347140829481845
 SpriteRenderer:
   m_ObjectHideFlags: 0

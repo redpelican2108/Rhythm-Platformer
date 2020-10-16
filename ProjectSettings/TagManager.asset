@@ -9,6 +9,7 @@ TagManager:
   - Checkpoint
   - MovingPlatform
   - Bullet
+  - Switch
   layers:
   - Default
   - TransparentFX
