@@ -21,6 +21,8 @@ public class MovementLevel2 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        counter = timer;
+        jumped = 1;
         
 
     }
