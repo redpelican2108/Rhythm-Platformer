@@ -10,6 +10,7 @@ TagManager:
   - MovingPlatform
   - Bullet
   - Switch
+  - Key
   layers:
   - Default
   - TransparentFX

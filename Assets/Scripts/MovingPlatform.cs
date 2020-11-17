@@ -12,6 +12,7 @@ public class MovingPlatform : MonoBehaviour
     public bool movingToLeft;
     public bool moving;
     public float speed;
+    public GameObject Key;
     Vector3 nextPosition;
     SpriteRenderer sprite;
 
@@ -48,7 +49,13 @@ public class MovingPlatform : MonoBehaviour
         } 
         else
         {
-            sprite.color = new Color(0, 1, 0, 1);
+            sprite.color = new Color(1, 0, 0, 1);
         }
+
+        if (Key == null)
+        {
+            moving = true;
+        }
+        
     }
 }

@@ -92,6 +92,10 @@ public class MovementLevel2 : MonoBehaviour
             transform.position = startingPosition;
             Destroy(collider.gameObject);
         }
+        if (collider.CompareTag("Key"))
+        {
+            Destroy(collider.gameObject);
+        }
 
     }
 
@@ -102,6 +106,4 @@ public class MovementLevel2 : MonoBehaviour
             transform.parent = null;
         }
     }
-
-    
 }
