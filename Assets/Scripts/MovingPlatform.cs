@@ -8,6 +8,7 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
+    public Transform prevPosition,prevPlatform;
     public Transform position1, position2;
     public bool movingToLeft;
     public bool moving;

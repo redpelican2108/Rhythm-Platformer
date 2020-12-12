@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovementLevel1 : MonoBehaviour
 {
@@ -77,6 +78,11 @@ public class MovementLevel1 : MonoBehaviour
         {
             transform.position = startingPosition;
             Destroy(collider.gameObject);
+        }
+        if(collider.gameObject.tag == "Door")
+        {
+            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
     }

@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovementLevel2 : MonoBehaviour
 {
@@ -95,6 +96,9 @@ public class MovementLevel2 : MonoBehaviour
         if (collider.CompareTag("Key"))
         {
             Destroy(collider.gameObject);
+        }
+        if (collider.gameObject.tag == "Door") {
+             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
     }
